@@ -12,6 +12,44 @@
             /* colgroup {
                 background-color: aquamarine;
             } */
+            /* ESTILOS DE TABLA */
+
+            table {
+                font-family: sans-serif;
+                border: 2px solid gray;
+                border-collapse: collapse;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            caption {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            th,
+            td {
+                border: 2px solid grey;
+                padding: .5rem;
+            }
+
+            tr:nth-child(4) td:nth-child(2) {
+                background-color: lightgreen;
+                letter-spacing: 90px;
+                padding-left: 50px;
+                text-transform: uppercase;
+            }
+
+            td:first-child,
+            th,
+            tfoot {
+                background-color: lightgreen;
+            }
+
+
+            /*
             col:nth-child(1) {
                 background-color: lightcoral;
             }
@@ -19,6 +57,7 @@
             col:nth-child(2) {
                 background-color: lightskyblue;
             }
+*/
         </style>
     </head>
     <body>
@@ -49,6 +88,8 @@
         Cuando necesitamos seleccionar una columna, tenemos la etiqueta colgroup, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas col como columnas tengamos, cada etiqueta col equivaldrá a una columna siguienndo el mismo orden que tienen en la tabla.
 
         Si necesitamos que una etiqueta col agrupe más de una columna, tenremos el atributo span, que funciona exactamente igual que rowspan y colspan.
+
+        NUNCA DAR ESTILO CON EL HTML 
     -->
 
         <h1>Tablas</h1>
