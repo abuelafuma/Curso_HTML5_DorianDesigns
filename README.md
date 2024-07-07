@@ -1,2 +1,2 @@
-# Cursos_DorianDesigns
-Cursos del Canal DorianDesigns
+# Curso_HTML5_DorianDesigns
+Curso HTML5 2022 del Canal DorianDesigns 
