@@ -4,8 +4,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Otras etiquetas de linea</title>
+
+        <style>
+            span {
+                color: red;
+            }
+        </style>
     </head>
+    <!--
+        span -> Es un contenedor de línea, equivalente a div, se suele usar
+        para encerrar palabras o pequeños textos y darles estilo a través
+        de CSS o localizarlos desde JavaScript. Semánticamente no significa
+        nada.
+
+        q -> Es el equivalente a blockquote, significa quote, por eso el de
+        bloque se llma block - quote. Sirve para poner citas pero en línea.
+
+        code -> Sirve para encerrar código que queremos representar
+        visualmente, suele ir unido con la etiqueta pre.
+
+        Entidades especiales en HTML - Código ASCII
+        https://ascii.cl/es/codigos-html.html
+    -->
     <body>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Architecto perspiciatis</span>, ut at soluta
+            animi dicta nulla minus, doloribus deleniti voluptatem sequi repellendus repellat ab fuga est dolor
+            voluptates dignissimos numquam.</p>
+        <q cite="link">Yo soy Iron Man</q>
+        <pre>
+            <code>
+                span {
+                    color: red;
+                }
+            </code>
+        </pre>
+
+        <!-- <p>La etiqueta <code><h1></code> se utiliza para representar títulos de primer nivel</p> -->
+        <p>La etiqueta <code>&#60;h1&#62;</code> se utiliza para representar títulos de primer nivel</p>
+        <p>La etiqueta <code>&lt;h1&#62;</code> se utiliza para representar títulos de primer nivel</p>
+        <!-- Símbolo de copyright -->
+        &copy;
+        &sbquo;
+
 
     </body>
 </html>
