@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tablas</title>
+        <style>
+            td {
+                background-color: steelblue;
+            }
+        </style>
     </head>
     <body>
         <!--
@@ -25,6 +30,10 @@
         El contenido de la tablas debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla
         
         De forma opcional podemos colocar un tfoot a la tabla para establecer un pie de tabla, esto es algo que algunas tablas tienen como suma de cantidades o total.
+
+        Para hacer que las celdas ocupen más de una fila o más de una columna, tenemos 2 atributos:
+        rowspan: sirve para que una celda ocupe mñas de una fila, el valor por defecto es 1
+        colspan sirve para que una celda ocupe más de una columna, el valor por defecto es 1
     -->
 
         <h1>Tablas</h1>
@@ -67,11 +76,11 @@
                 </tr>
                 <tr>
                     <td>11:20 - 11:45</td>
-                    <td>Recreo</td>
+                    <td colspan="5">Recreo</td>
+                    <!-- <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td></td> -->
                 </tr>
                 <tr>
                     <td>11:45 - 12:40</td>
@@ -83,24 +92,24 @@
                 </tr>
                 <tr>
                     <td>12:40 - 13:35</td>
-                    <td>Música</td>
+                    <td rowspan="2">Tecnología</td>
                     <td>Educación Física</td>
                     <td>Plástica</td>
                     <td>Religión</td>
-                    <td>Música</td>
+                    <td rowspan="2">Tecnología</td>
                 </tr>
                 <tr>
                     <td>13:35 - 14:30</td>
-                    <td>Tecnología</td>
+                    <!-- <td>Tecnología</td> -->
                     <td>Francés</td>
                     <td>Tecnología</td>
                     <td>Frnacés</td>
-                    <td>Tecnología</td>
+                    <!-- <td>Tecnología</td> -->
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Total de Asignaturas</td>
+                    <td colspan="5">Total de Asignaturas</td>
                     <td>12</td>
                 </tr>
             </tfoot>
