@@ -5,8 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tablas</title>
         <style>
-            td {
+            /* col {
                 background-color: steelblue;
+            } */
+
+            /* colgroup {
+                background-color: aquamarine;
+            } */
+            col:nth-child(1) {
+                background-color: lightcoral;
+            }
+
+            col:nth-child(2) {
+                background-color: lightskyblue;
             }
         </style>
     </head>
@@ -33,12 +44,24 @@
 
         Para hacer que las celdas ocupen más de una fila o más de una columna, tenemos 2 atributos:
         rowspan: sirve para que una celda ocupe mñas de una fila, el valor por defecto es 1
-        colspan sirve para que una celda ocupe más de una columna, el valor por defecto es 1
+        colspan sirve para que una celda ocupe más de una columna, el valor por defecto es 1.
+
+        Cuando necesitamos seleccionar una columna, tenemos la etiqueta colgroup, que nos permite seleccionar una columna en concreto. Dentro pondremos tantas etiquetas col como columnas tengamos, cada etiqueta col equivaldrá a una columna siguienndo el mismo orden que tienen en la tabla.
+
+        Si necesitamos que una etiqueta col agrupe más de una columna, tenremos el atributo span, que funciona exactamente igual que rowspan y colspan.
     -->
 
         <h1>Tablas</h1>
         <table>
             <caption>Horario de Clases</caption>
+            <colgroup>
+                <!-- <col>
+                <col>
+                <col> 
+                <col> -->
+                <col span="5">
+                <col>
+            </colgroup>
             <thead>
                 <tr>
                     <th></th>
